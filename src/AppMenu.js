@@ -27,7 +27,7 @@ export class AppMenu extends Component {
                 <CSSTransition classNames="layout-submenu" timeout={{ enter: 400, exit: 400 }} in={this.state.activeMenu === 0}>
                     <div className="layout-submenu">
                         <div>
-                            <Link to="/autocomplete">&#9679; AutoComplete</Link>
+                            <Link to="/autocomplete">&#9679; AutoComplete SM</Link>
                             <Link to="/calendar">&#9679; Calendar</Link>
                             <Link to="/checkbox">&#9679; Checkbox</Link>
                             <Link to="/colorpicker">&#9679; ColorPicker</Link>
