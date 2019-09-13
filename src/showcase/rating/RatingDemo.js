@@ -7,8 +7,8 @@ export class RatingDemo extends Component {
 
     constructor() {
         super();
-        this.state = { 
-            val1: null, 
+        this.state = {
+            val1: null,
             val2: null
         };
     }
@@ -26,15 +26,15 @@ export class RatingDemo extends Component {
 
                 <div className="content-section implementation">
                     <h3 className="first">Basic {this.state.val1}</h3>
-                    <Rating value={this.state.val1} onChange={(e) => this.setState({val1: e.value})} />
-    
-                    <h3>No Cancel {this.state.val2}</h3> 
-                    <Rating value={this.state.val2} cancel={false} onChange={(e) => this.setState({val2: e.value})} />
+                    <Rating value={this.state.val1} onChange={(e) => this.setState({ val1: e.value })} />
 
-                    <h3>ReadOnly</h3> 
+                    <h3>No Cancel {this.state.val2}</h3>
+                    <Rating value={this.state.val2} cancel={false} onChange={(e) => this.setState({ val2: e.value })} />
+
+                    <h3>ReadOnly</h3>
                     <Rating value={5} readonly={true} stars={10} cancel={false} />
 
-                    <h3>Disabled</h3> 
+                    <h3>Disabled</h3>
                     <Rating value={8} disabled={true} stars={10} />
                 </div>
 
@@ -46,7 +46,7 @@ export class RatingDemo extends Component {
 
 class RatingDoc extends Component {
 
-    shouldComponentUpdate(){
+    shouldComponentUpdate() {
         return false;
     }
 
@@ -65,9 +65,9 @@ import {Rating} from 'primereact/rating';
 
                         <h3>Getting Started</h3>
                         <p>Rating is used a controlled input component with <i>value</i> and <i>onChange</i> properties.</p>
-                        
+
                         <CodeHighlight className="language-jsx">
-{`
+                            {`
 <Rating value={this.state.value} onChange={(e) => this.setState({value: e.value})} />
 
 `}
@@ -75,9 +75,9 @@ import {Rating} from 'primereact/rating';
 
                         <h3>Number of Stars</h3>
                         <p>Number of stars to display is defined with <i>stars</i> property, default is 5.</p>
-                        
+
                         <CodeHighlight className="language-jsx">
-{`
+                            {`
 <Rating value={this.state.value} onChange={(e) => this.setState({value: e.value})} stars={5} />
 
 `}
@@ -85,9 +85,9 @@ import {Rating} from 'primereact/rating';
 
                         <h3>Cancel</h3>
                         <p>A cancel icon is displayed to reset the value by default, set <i>cancel</i> as false to remove this option.</p>
-                        
+
                         <CodeHighlight className="language-jsx">
-{`
+                            {`
 <Rating value={this.state.value} onChange={(e) => this.setState({value: e.value})} cancel={5} />
 
 `}
@@ -168,7 +168,7 @@ import {Rating} from 'primereact/rating';
                                 </tbody>
                             </table>
                         </div>
-                            
+
                         <h3>Events</h3>
                         <div className="doc-tablewrapper">
                             <table className="doc-table">
